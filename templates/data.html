@@ -8,7 +8,9 @@
 <body>
     <center> 
         <h1> Your Name is {{Name}}</h1>
-        <h2> Your Age is {{Age}}</h2>
+        {% if Age > 18 %}
+            <h2> Your Age is {{Age}}</h2>
+        {% endif %}
         <h3> Your Date of Birth is {{DOB}} </h3>
     </center>
 </body>
